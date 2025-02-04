@@ -84,7 +84,7 @@ function PaymentComponent() {
                 <InputComponent label="Persoal Details" placeholder="Address Line"  />
                 <InputComponent label="Persoal Details" placeholder="Address Line1"  />
             </div>
-            <div className='lg:grid-cols-2 grid-cols-1 gap-5 mx-auto my-3'>
+            <div className='grid grid-cols-1 lg:grid-cols-2 gap-5 mx-auto my-3'>
                 <InputComponent label="Persoal Details" placeholder="Address Line"  />
                 <InputComponent label="Persoal Details" placeholder="Address Line1"  />
             </div>
