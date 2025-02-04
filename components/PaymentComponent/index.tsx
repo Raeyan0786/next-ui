@@ -44,7 +44,7 @@ const ImageObject:ImageType[]=[
 function PaymentComponent() {
   return (
     <section className='w-[80%] flex items-center justify-center mt-10 py-20 bg-white rounded-lg'>
-        <div className='w-[40%] flex items-center justify-center'>
+        <div className='w-[40%] hidden  sm:flex items-center justify-center'>
           <Image
           src={Pay}
           alt=''
@@ -52,19 +52,19 @@ function PaymentComponent() {
           height={346}
           />
         </div>
-        <div className='w-[60%]'>
+        <div className='w-[90%] lg:w-[60%]'>
             
             <div className='w-[90%] mx-auto'>
-            <h3 className='text-3xl font-semibold leading-8'>Complete registration page</h3>
+            <h3 className='text-2xl lg:text-3xl font-semibold leading-8'>Complete registration page</h3>
             <p className='text-xl font-bold leading-10'>Personal details</p>
-            <div className='grid grid-cols-2 gap-5 mx-auto'>
+            <div className='grid lg:grid-cols-2 grid-cols-1 gap-5 mx-auto'>
                 <InputComponent label="Persoal Details" placeholder="Address Line"  />
                 <InputComponent label="Persoal Details" placeholder="Address Line1"  />
             </div>
 
             <div>
             <p className='text-xl font-bold leading-10 '>Card details</p>
-            <div className='flex gap-5'>
+            <div className='flex gap-5 '>
             {ImageObject.map((item:ImageType)=>(
               <div key={item.id}>
                 <Image
@@ -84,7 +84,7 @@ function PaymentComponent() {
                 <InputComponent label="Persoal Details" placeholder="Address Line"  />
                 <InputComponent label="Persoal Details" placeholder="Address Line1"  />
             </div>
-            <div className='grid grid-cols-2 gap-5 mx-auto my-3'>
+            <div className='lg:grid-cols-2 grid-cols-1 gap-5 mx-auto my-3'>
                 <InputComponent label="Persoal Details" placeholder="Address Line"  />
                 <InputComponent label="Persoal Details" placeholder="Address Line1"  />
             </div>
